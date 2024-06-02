@@ -11,16 +11,37 @@ const translations = {
         Azərbaycanca: "Azərbaycanca",
         Русский: "Русский",
         Deutsch: "Deutsch",
-        about: "Aboutaz",
-        services: "ServicesAz",
-        portfolio: "PortfolioAz",
-        title: "Find Out More",
-        description: "This is a multilingual website template."
+        home: "Ana səhifə",
+        about: "Haqqımızda",
+        services: "Xidmətlərimiz",
+        portfolio: "Portfolio",
+        team: "Komandamız",
+        contact: "Əlaqə",
+        testimonals: "Rəylər",
+        hero1: "Almaniyaya gəliş prosesinizi asanlaşdırmaq üçün",
+        hero2: "Biznes və Viza",
+        hero3: "məsələləri üzrə ekspert dəstəyi",
+        get_started_btn: "Ətraflı",
+        services_btn: "Xidmətlərimiz",
+        phone: "Telefon:",
+        email: "E-ünvan",
+        links: "Keçidlər",
+        terms: "Xidmət Şərtləri",
+        privacy: "Məxfilik siyasəti",
+        edu_visa: "Təhsil vizası",
+        edu_visa_text: "Təhsiliniz ilə bağlı viza almağa tam dəstək oluruq",
+        work_visa: "İş vizası",
+        work_visa_text: "Almaniyada işləmək arzusundasınzsa, Biz həm viza həmdə işlə bağlı dəstək ola bilirik",
+        aus: "Ausbildung proqramı",
+        aus_text:"Yeni karyeranızı Almaniyada qurmağı düşünürsüzə, Bizə müraciət edin",
+        mission_text: "Missiyamız Almaniyada məskunlaşmaq istəyənlərin proseslərini asanlaşdırmaq və onları uyğun iş imkanları ilə əlaqələndirməkdən ibarətdir. Mütəxəssis komandamız iş axtarışından tutmuş viza müraciətlərinə, təhsil imkanlarından məskunlaşma mərhələlərinə qədər hər addımda məsləhət və dəstək təklif edir.",
+        about_text: "KH Recruiting - biz hər bir insana Almaniyada uğurlu karyera və ya təhsil həyatı üçün lazım olan dəstəyi təmin etmək üçün buradayıq.",
+        services_text: "KH Recruiting Almaniyada iş və işçi tapmaqda ixtisaslaşan, əcnəbilərin Almaniyaya gəlməsinə rəhbərlik edən bir şirkətdir. Almaniyaya gəlmək istəyən hər kəsə iş və viza dəstəyi verməklə yanaşı, Ausbildung proqramlarında iştirak etmək və ya təhsil almaq istəyənlərə də viza və məktəb dəstəyi veririk."
     },
     Ru: {
         Azərbaycanca: "Azərbaycanca",
         Русский: "Русский",
-        Deutsch: "Deutsch",
+        Deutsch: "Немецкий",
         about: "О нас",
         services: "Услуги",
         contact: "Контакты",
@@ -34,7 +55,7 @@ const translations = {
     De: {
         Azərbaycanca: "Azərbaycanca",
         Русский: "Русский",
-        Deutsch: "Deutsch",
+        Deutsch: "Deutsch!!!",
         about: "Aboutde",
         services: "Servicesde",
         portfolio: "Portfoliode",
@@ -53,7 +74,7 @@ function changeLanguage(language) {
 
 document.addEventListener('DOMContentLoaded', event => {
     console.log(event);
-    changeLanguage("Ru");
+    changeLanguage("Az");
     console.log("lang change");
     });
 
