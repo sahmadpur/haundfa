@@ -35,8 +35,8 @@ const translations = {
         aus: "Ausbildung proqramı",
         aus_text:"Yeni karyeranızı Almaniyada qurmağı düşünürsüzə, Bizə müraciət edin",
         mission_text: "Missiyamız Almaniyada məskunlaşmaq istəyənlərin proseslərini asanlaşdırmaq və onları uyğun iş imkanları ilə əlaqələndirməkdən ibarətdir. Mütəxəssis komandamız iş axtarışından tutmuş viza müraciətlərinə, təhsil imkanlarından məskunlaşma mərhələlərinə qədər hər addımda məsləhət və dəstək təklif edir.",
-        about_text: "KH Recruiting - biz hər bir insana Almaniyada uğurlu karyera və ya təhsil həyatı üçün lazım olan dəstəyi təmin etmək üçün buradayıq.",
-        services_text: "KH Recruiting Almaniyada iş və işçi tapmaqda ixtisaslaşan, əcnəbilərin Almaniyaya gəlməsinə rəhbərlik edən bir şirkətdir. Almaniyaya gəlmək istəyən hər kəsə iş və viza dəstəyi verməklə yanaşı, Ausbildung proqramlarında iştirak etmək və ya təhsil almaq istəyənlərə də viza və məktəb dəstəyi veririk."
+        about_text: "Ha&Fa Nord - biz hər bir insana Almaniyada uğurlu karyera və ya təhsil həyatı üçün lazım olan dəstəyi təmin etmək üçün buradayıq.",
+        services_text: "Ha&Fa Nord Almaniyada iş və işçi tapmaqda ixtisaslaşan, əcnəbilərin Almaniyaya gəlməsinə rəhbərlik edən bir şirkətdir. Almaniyaya gəlmək istəyən hər kəsə iş və viza dəstəyi verməklə yanaşı, Ausbildung proqramlarında iştirak etmək və ya təhsil almaq istəyənlərə də viza və məktəb dəstəyi veririk."
     },
     Ru: {
         Azərbaycanca: "Azərbaycanca",
