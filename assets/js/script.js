@@ -1,9 +1,23 @@
+function showGermanText(selectedLanguage) {
+    const germanElements = document.querySelectorAll('#only_de');
+    if (selectedLanguage === 'De') {
+        germanElements.forEach(element => {
+            element.style.display = 'block';
+        });
+    } else {
+        germanElements.forEach(element => {
+            element.style.display = 'none';
+        });
+    }
+}
+
 document.querySelectorAll('.language-option').forEach(item => {
     item.addEventListener('click', event => {
         event.preventDefault();
         event.stopPropagation(); // Stop the event from propagating
         const selectedLanguage = event.target.getAttribute('data-lang');
         document.getElementById('selectedLanguage').textContent = selectedLanguage;
+        showGermanText(selectedLanguage);
     });
 });
 const translations = {
@@ -126,3 +140,4 @@ document.addEventListener('DOMContentLoaded', event => {
 
 // Debugging: Ensure the script is loaded
 console.log("Script loaded successfully");
+
