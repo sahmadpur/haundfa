@@ -1489,3 +1489,62 @@ section {
 #footer .credits a:hover {
   color: #f1f7ff;
 }
+
+/* ======= Clients Section ======= */
+.clients {
+  padding: 40px 0;
+  background: #f9f9f9;
+}
+
+.clients .swiper-slide {
+  text-align: center;
+  padding: 10px;
+}
+
+.client-logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 200px;
+  /* Enough space for logo + brand name */
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+
+
+.client-logo-wrapper img {
+  max-width: 100%;
+  max-height: 100px;
+  /* Controls vertical size */
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  filter: grayscale(100%);
+  transition: 0.3s ease-in-out;
+}
+
+.client-logo-wrapper:hover img {
+  filter: none;
+  transform: scale(1.05);
+}
+
+.brand-name {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #444;
+  text-align: justify;
+  line-height: 1.4;
+  min-height: 40px;
+  /* Reserve space for 2+ lines */
+  max-width: 160px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.client-logo-wrapper:hover .brand-name {
+  opacity: 1;
+}

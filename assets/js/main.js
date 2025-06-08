@@ -250,3 +250,28 @@
   new PureCounter();
 
 })()
+
+
+new Swiper('.clients-slider', {
+  speed: 400,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  },
+  slidesPerView: 2,
+  breakpoints: {
+    576: {
+      slidesPerView: 3
+    },
+    768: {
+      slidesPerView: 4
+    },
+    992: {
+      slidesPerView: 5
+    },
+    1200: {
+      slidesPerView: 6
+    }
+  }
+});
