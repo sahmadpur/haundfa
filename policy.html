@@ -28,6 +28,17 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <style>
+    h2,
+    h3,
+    h4 {
+      font-weight: bold;
+    }
+
+    .special p {
+      text-align: justify
+    }
+  </style>
   <!-- =======================================================
   * Template Name: NewBiz
   * Template URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
@@ -94,7 +105,7 @@
     </section><!-- End Breadcrumbs Section -->
 
     <section class="inner-page pt-4">
-      <div class="container" style="text-align: justify;">
+      <div class="container special">
         <h2>1. Datenschutz auf einen Blick</h2>
         <h3>Allgemeine Hinweise</h3>
         <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten
@@ -363,9 +374,10 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4 data-lang="links">Verknüpfung</h4>
             <ul>
-              <li><a href="#" dala-lang="home">Startseite</a></li>
-              <li><a href="#" data-lang="about">Über Uns</a></li>
-              <li><a href="#" data-lang="terms">Servicebedingungen</a></li>
+              <li><a href="/index.html" dala-lang="home">Startseite</a></li>
+              <li><a href="/index.html" data-lang="about">Über Uns</a></li>
+              <li><a href="/impressum.html" data-lang="about">Impressum</a></li>
+              <li><a href="/index.html" data-lang="terms">Servicebedingungen</a></li>
               <li><a href="/policy.html" data-lang="privacy">Datenschutzrichtlinie</a></li>
             </ul>
           </div>
@@ -418,6 +430,7 @@
     // Get the current year
     document.getElementById('currentYear').textContent = new Date().getFullYear();
   </script>
+
 
 </body>
 
