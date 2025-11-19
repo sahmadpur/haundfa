@@ -537,8 +537,9 @@
             <ul>
               <li><a href="#" dala-lang="home">Ana səhifə</a></li>
               <li><a href="#" data-lang="about">Haqqımızda</a></li>
+              <li><a href="/impressum.html" data-lang="about">Hüquqi Bildiriş</a></li>
               <li><a href="#" data-lang="terms">Xidmət Şərtləri</a></li>
-              <li><a href="#" data-lang="privacy">Məxfilik siyasəti</a></li>
+              <li><a href="/policy.html" data-lang="privacy">Məxfilik siyasəti</a></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 footer-contact">
@@ -563,7 +564,7 @@
     </div>
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>Ha&Fa Nord 2024</strong>. Bütün hüquqlar qorunur.
+        &copy; Copyright <strong>Ha&Fa Nord <span id="currentYear"></span></strong>. Alle rechte vorbehalten.
       </div>
       <div class="credits">
         Designed by <a href="#">Sohrab S. Ahmadpur</a>
@@ -586,6 +587,10 @@
 
   <!-- Template Main JS File -->
   <script src="/assets/js/main.js"></script>
+  <script>
+    // Get the current year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
   <!-- <script src="/assets/js/script.js"></script> -->
 
 </body>

@@ -536,8 +536,9 @@
             <ul>
               <li><a href="#" dala-lang="home">Главная страница</a></li>
               <li><a href="#" data-lang="about">О Нас</a></li>
+              <li><a href="/impressum.html" data-lang="about">Правовое уведомление</a></li>
               <li><a href="#" data-lang="terms">Условия использования</a></li>
-              <li><a href="#" data-lang="privacy">Политика конфиденциальности</a></li>
+              <li><a href="/policy.html" data-lang="privacy">Политика конфиденциальности</a></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 footer-contact">
@@ -562,7 +563,7 @@
     </div>
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>Ha&Fa Nord 2024</strong>. Все права защищены.
+        &copy; Copyright <strong>Ha&Fa Nord <span id="currentYear"></span></strong>. Alle rechte vorbehalten.
       </div>
       <div class="credits">
         Designed by <a href="#">Sohrab S. Ahmadpur</a>
@@ -585,6 +586,10 @@
 
   <!-- Template Main JS File -->
   <script src="/assets/js/main.js"></script>
+  <script>
+    // Get the current year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
   <!-- <script src="/assets/js/script.js"></script> -->
 
 </body>
