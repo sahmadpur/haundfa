@@ -504,7 +504,6 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
@@ -522,7 +521,7 @@
               <li><a href="#" dala-lang="home">Startseite</a></li>
               <li><a href="#" data-lang="about">Über Uns</a></li>
               <li><a href="#" data-lang="terms">Servicebedingungen</a></li>
-              <li><a href="#" data-lang="privacy">Datenschutzrichtlinie</a></li>
+              <li><a href="/policy.html" data-lang="privacy">Datenschutzrichtlinie</a></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6 footer-contact">
@@ -547,13 +546,13 @@
     </div>
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>Ha&Fa Nord 2024</strong>. Alle rechte vorbehalten.
+        &copy; Copyright <strong>Ha&Fa Nord <span id="currentYear"></span></strong>. Alle rechte vorbehalten.
       </div>
       <div class="credits">
         Designed by <a href="#">Sohrab S. Ahmadpur</a>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
   <!-- End Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
@@ -570,6 +569,10 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    // Get the current year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
   <!-- <script src="assets/js/script.js"></script> -->
 
 
