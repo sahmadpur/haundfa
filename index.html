@@ -14,8 +14,10 @@
   <link href="assets/img/logo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@700;900&family=Kaushan+Script&family=Open+Sans:wght@400;600;700&family=Montserrat:wght@400;500;700&display=swap"
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -27,6 +29,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/home.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: NewBiz
@@ -41,54 +44,29 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex justify-content-between">
+    <div class="container-xl d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <!-- Uncomment below if you prefer to use an text logo -->
-        <h1><a href="/">Ha&Fa Nord</a></h1>
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
+        <a href="/"><img src="assets/img/logo.png" alt="Ha&amp;Fa Nord Logo"><span>Ha&amp;Fa Nord</span></a>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero" data-lang="home">Startseite</a></li>
-          <li><a class="nav-link scrollto" href="#about" data-lang="about">Über Uns</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#services" data-lang="services">Services</a></li> -->
-          <!-- <li><a class="nav-link scrollto " href="#portfolio" data-lang="portfolio">Portfolio</a></li> -->
-          <!-- <li><a class="nav-link scrollto" href="#team" data-lang="team">Team</a></li> -->
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
+          <li><a class="nav-link scrollto active" href="#home" data-lang="home">Startseite</a></li>
+          <li><a class="nav-link scrollto" href="#services">Personalvermittlung</a></li>
+          <li><a class="nav-link scrollto" href="#services">Weitere Leistungen</a></li>
+          <li><a class="nav-link scrollto" href="#about" data-lang="about">Über uns</a></li>
           <li><a class="nav-link scrollto" href="#contact" data-lang="contact">Kontakt</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="true"><i class="bi bi-globe">&nbsp</i><span id="selectedLanguage"
-                data-lang="Deutsch">Deutsch</span>
-            </a>
+              aria-expanded="false" aria-label="Sprache wählen"><i class="bi bi-globe"></i></a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item language-option" href="/" data-lang="Deutsch"
-                  onclick="changeLanguage('De')">Deutsch</a></li>
-              <li><a class="dropdown-item language-option" href="/az/" data-lang="Azərbaycanca"
-                  onclick="changeLanguage('Az')">Azərbaycanca</a></li>
-              <li><a class="dropdown-item language-option" href="/ru/" data-lang="Русский"
-                  onclick="changeLanguage('Ru')">Русский</a></li>
+              <li><a class="dropdown-item language-option" href="/">Deutsch</a></li>
+              <li><a class="dropdown-item language-option" href="/az/">Azərbaycanca</a></li>
+              <li><a class="dropdown-item language-option" href="/ru/">Русский</a></li>
             </ul>
           </li>
-
+          <li><a class="hf-btn hf-btn-dark scrollto" href="#contact">Jetzt beraten lassen <i class="bi bi-arrow-right"></i></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -97,131 +75,209 @@
   </header><!-- #header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="clearfix">
-    <div class="container" data-aos="fade-up">
+  <section id="home">
+    <div class="hero-photo" role="img" aria-label="Hamburg Elbphilharmonie – Talente verbinden Zukunft"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-curve"></div>
+    <div class="hero-swoosh"></div>
 
-      <div class="hero-img" data-aos="zoom-out" data-aos-delay="200">
-        <img src="assets/img/hero-img.svg" alt="" class="img-fluid">
-      </div>
+    <div class="hero-band">
+      <svg viewBox="0 0 400 300" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M70 0 H255 Q285 0 300 28 L400 300 H130 Q112 300 102 282 L8 52 Q-6 0 70 0 Z" fill="#0b1f3f" />
+      </svg>
+      <ul>
+        <li>Fachkräfte<br>aus aller Welt</li>
+        <li>Sichere Prozesse</li>
+        <li>Starke Partner</li>
+        <li>Langfristige<br>Perspektiven</li>
+      </ul>
+    </div>
 
-      <div class="hero-info" data-aos="zoom-in" data-aos-delay="100">
-        <h2 data-lang="hero1">Kompetente Unterstützung in</h2>
-        <h2><span data-lang="hero2">Geschäfts - und Visaangelegenheiten</span></h2>
-        <h2 data-lang="hero3">um Ihren Ankunftsprozess in Deutschland zu erleichtern</h2>
-        <div>
-          <a href="#about" class="btn-get-started scrollto" data-lang="get_started_btn">Mehr</a>
-          <!-- <a href="#services" class="btn-services scrollto" data-lang="services_btn">Our Services</a> -->
+    <div class="hero-pin"><i class="bi bi-geo-alt-fill"></i><span>Stark in Hamburg<br>für Sie da.</span></div>
+
+    <div class="container-xl">
+      <div class="hero-content" data-aos="fade-up">
+        <a href="/" class="hero-brand">
+          <img src="assets/img/logo.png" alt="Ha&amp;Fa Nord Logo">
+          <span>Ihr Partner für zuverlässige Lösungen</span>
+        </a>
+        <p class="hero-eyebrow">Internationale Fachkräfte. Echte Perspektiven.</p>
+        <h1>Personalvermittlung<br><span>mit Zukunft.</span></h1>
+        <p class="hero-lead">Wir bringen qualifizierte Fachkräfte und starke Unternehmen zusammen – zuverlässig,
+          international und persönlich. Ha&amp;Fa Nord steht für Menschen, Chancen und nachhaltigen Erfolg.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="hf-btn hf-btn-dark scrollto">Jetzt unverbindlich anfragen <i class="bi bi-arrow-right"></i></a>
+          <a href="#services" class="hf-btn hf-btn-outline scrollto">Mehr erfahren</a>
         </div>
+        <p class="hero-tag">Aus Hamburg. Für Menschen. Weltweit.</p>
       </div>
-
     </div>
   </section><!-- End Hero Section -->
 
   <main id="main">
 
+    <!-- ======= Services Section ======= -->
+    <section id="services">
+      <div class="container-xl">
+        <div class="row g-3">
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up">
+            <article class="service-card is-dark">
+              <div class="service-media" style="background-image:url('assets/img/service-personal.jpg')">
+                <span class="service-icon"><i class="bi bi-people-fill"></i></span>
+              </div>
+              <div class="service-body">
+                <h3>Personalvermittlung</h3>
+                <p class="service-sub">Internationale Fachkräfte für Ihren Erfolg</p>
+                <ul>
+                  <li>Vermittlung internationaler Fachkräfte</li>
+                  <li>Unterstützung bei Visaangelegenheiten</li>
+                  <li>Anerkennung von Qualifikationen</li>
+                  <li>Vermittlung von Auszubildenden</li>
+                  <li>Beratung für Arbeitgeber</li>
+                  <li>Begleitung im gesamten Prozess</li>
+                </ul>
+                <a href="#contact" class="service-more scrollto">Mehr erfahren <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <article class="service-card">
+              <div class="service-media" style="background-image:url('assets/img/service-reinigung.jpg')">
+                <span class="service-icon"><i class="bi bi-bucket-fill"></i></span>
+              </div>
+              <div class="service-body">
+                <h3>Gebäudereinigung</h3>
+                <p class="service-sub">Für ein sauberes und gesundes Umfeld</p>
+                <ul>
+                  <li>Unterhaltsreinigung</li>
+                  <li>Büro- und Praxisreinigung</li>
+                  <li>Glas- und Fensterreinigung</li>
+                  <li>Grund- und Sonderreinigung</li>
+                  <li>Bauendreinigung</li>
+                  <li>Individuelle Reinigungskonzepte</li>
+                </ul>
+                <a href="#contact" class="service-more scrollto">Mehr erfahren <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <article class="service-card">
+              <div class="service-media" style="background-image:url('assets/img/service-hausmeister.jpg')">
+                <span class="service-icon"><i class="bi bi-wrench-adjustable"></i></span>
+              </div>
+              <div class="service-body">
+                <h3>Hausmeisterservice</h3>
+                <p class="service-sub">Zuverlässige Betreuung Ihrer Immobilie</p>
+                <ul>
+                  <li>Regelmäßige Objektkontrollen</li>
+                  <li>Kleinere Instandhaltungsarbeiten</li>
+                  <li>Mülltonnenservice</li>
+                  <li>Außenanlagenpflege</li>
+                  <li>Winterdienst</li>
+                  <li>Wohnungsübergaben</li>
+                  <li>Koordination externer Fachbetriebe</li>
+                </ul>
+                <a href="#contact" class="service-more scrollto">Mehr erfahren <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <article class="service-card">
+              <div class="service-media" style="background-image:url('assets/img/service-objekt.jpg')">
+                <span class="service-icon"><i class="bi bi-house-door-fill"></i></span>
+              </div>
+              <div class="service-body">
+                <h3>Objektservice</h3>
+                <p class="service-sub">Werterhalt und gepflegte Außenanlagen</p>
+                <ul>
+                  <li>Garten- und Grünanlagenpflege</li>
+                  <li>Treppenhausreinigung</li>
+                  <li>Technische Objektbetreuung</li>
+                  <li>Überwachung von Dienstleistern</li>
+                  <li>Saisonale Services (z.&nbsp;B. Winterdienst)</li>
+                  <li>Reinigungs- und Pflegekonzepte</li>
+                  <li>Maßgeschneiderte Lösungen</li>
+                </ul>
+                <a href="#contact" class="service-more scrollto">Mehr erfahren <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Values Strip ======= -->
+    <section id="values">
+      <div class="container-xl">
+        <div class="values-row">
+          <div class="value-item"><i class="bi bi-tree-fill"></i><span>Nachhaltig<br>und verantwortungsvoll</span></div>
+          <div class="value-item"><i class="bi bi-hand-thumbs-up-fill"></i><span>Vertrauensvolle<br>Zusammenarbeit</span></div>
+          <div class="value-item"><i class="bi bi-shield-fill-check"></i><span>Rechtssicher<br>und transparent</span></div>
+          <div class="value-item"><i class="bi bi-people-fill"></i><span>Persönliche<br>Betreuung</span></div>
+          <div class="value-item"><i class="bi bi-globe2"></i><span>Internationale<br>Netzwerke</span></div>
+          <div class="values-script">Gemeinsam<br>mehr erreichen.</div>
+        </div>
+      </div>
+    </section><!-- End Values Strip -->
+
     <!-- ======= About Section ======= -->
     <section id="about">
-      <div class="container" data-aos="fade-up">
+      <div class="container-xl" data-aos="fade-up">
 
         <header class="section-header">
-          <h3 data-lang="about">Über Uns</h3>
-          <p data-lang="about_text">Die Ha&Fa Nord ist ein in Hamburg ansässiges Recruting-Unternehmen, das sich auf die
-            Vermittlung von Fachkräften, Auszubildenden, Weiterbildenden, Praktikanten, etc. aus dem Ausland
-            spezialisiert hat. Als spezialisiertes Team verfügen wir über umfangreiche Erfahrung und Fachkenntnisse in
-            der Platzierung qualifizierter Arbeitskräfte aus dem Ausland.</p>
+          <h3 data-lang="about">Über uns</h3>
         </header>
 
-        <div class="row about-container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <p class="about-lead" data-lang="about_text">Die Ha&amp;Fa Nord ist ein in Hamburg ansässiges
+              Recruiting-Unternehmen, das sich auf die Vermittlung von Fachkräften, Auszubildenden, Weiterbildenden,
+              Praktikanten u.&nbsp;v.&nbsp;m. aus dem Ausland spezialisiert hat. Darüber hinaus bieten wir
+              Gebäudereinigung, Hausmeister- und Objektservice aus einer Hand.</p>
 
-          <div class="col-lg-6 content order-lg-1 order-2">
-            <p data-lang="services_text">Unser Ziel ist es, Fachkräfte erfolgreich in gut bezahlte und vielversprechende
-              (dauerhafte) Positionen in Deutschland zu vermitteln. Wir bieten umfassende Unterstützung von der
-              persönlichen Beratung über die Anerkennung, Dolmetscherdienste bis hin zur Arbeitsvermittlung und der
-              Einreise nach Deutschland.</p>
-
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bi bi-card-checklist"></i></div>
-              <h4 class="title"><a href="" data-lang="edu_visa">Visum zum Studium</a></h4>
-              <p class="description" data-lang="edu_visa_text">Wir unterstützen Sie umfassend bei der Beantragung eines
-                Visums für Ihr Studium</p>
+            <div class="about-point">
+              <i class="bi bi-card-checklist"></i>
+              <div>
+                <h4>Visum zum Studium</h4>
+                <p>Wir unterstützen Sie umfassend bei der Beantragung eines Visums für Ihr Studium.</p>
+              </div>
             </div>
-
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bi bi-brightness-high"></i></div>
-              <h4 class="title"><a href="" data-lang="work_visa">Arbeitsvisum</a></h4>
-              <p class="description" data-lang="work_visa_text">Wenn Sie in Deutschland arbeiten möchten, können wir
-                Ihnen sowohl bei der Visums- als auch bei der Beschäftigungsunterstützung behilflich sein</p>
+            <div class="about-point">
+              <i class="bi bi-briefcase-fill"></i>
+              <div>
+                <h4>Arbeitsvisum</h4>
+                <p>Wir helfen Ihnen bei Visum und Beschäftigung, wenn Sie in Deutschland arbeiten möchten.</p>
+              </div>
             </div>
-
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="bi bi-calendar4-week"></i></div>
-              <h4 class="title"><a href="" data-lang="aus">Ausbildung</a></h4>
-              <p class="description" data-lang="aus_text">Wenn Sie darüber nachdenken, Ihre neue Karriere in Deutschland
-                zu beginnen, kontaktieren Sie uns</p>
+            <div class="about-point">
+              <i class="bi bi-mortarboard-fill"></i>
+              <div>
+                <h4>Ausbildung</h4>
+                <p>Sie möchten Ihre Karriere in Deutschland beginnen? Kontaktieren Sie uns.</p>
+              </div>
             </div>
-
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="bi bi-person-workspace"></i></div>
-              <h4 class="title"><a href="" data-lang="aus">Weiterbildung (Praktikum)</a></h4>
-              <p class="description text-justify" data-lang="aus_text">Betriebliches (Weiterbildungs)Praktikum ist
-                sozusagen eine
-                Alternative der festen Anstellung, falls die Deutschkenntnisse bzw. Ausbildungsniveau einer direkten
-                Anstellung zunächst nicht ausreichen sind.
-                Es dient dazu, praktische berufliche Kenntnisse, Fertigkeiten und Erfahrungen zu den im (Studien)fach
-                erworbenen theoretischen Inhalten zu erwerben. Somit steht die berufliche Qualifizierung im Fokus und
-                dem Praktikanten könnte die Erbringung einer z.T. vollwertigen Arbeitsleistung delegiert werden.</p>
+            <div class="about-point">
+              <i class="bi bi-person-workspace"></i>
+              <div>
+                <h4>Weiterbildung (Praktikum)</h4>
+                <p>Ein betriebliches Weiterbildungspraktikum ist eine Alternative zur festen Anstellung, wenn
+                  Deutschkenntnisse oder Ausbildungsniveau zunächst nicht ausreichen – mit Fokus auf praktischer
+                  beruflicher Qualifizierung.</p>
+              </div>
             </div>
-
           </div>
-
-          <div class="col-lg-6 background order-lg-2 d-flex align-items-center" data-aos="zoom-in">
-            <img src="assets/img/about-img.svg" class="img-fluid" alt="">
+          <div class="col-lg-6" data-aos="zoom-in">
+            <div class="about-image"><img src="assets/img/hero-hamburg.jpg" alt="Hamburg – Sitz von Ha&amp;Fa Nord"></div>
           </div>
         </div>
 
-        <div id="only_de" class="row about-extra">
-          <div class="col-lg-6" data-aos="fade-right">
-            <!-- <img src="assets/img/about-extra-1.svg" class="img-fluid" alt=""> -->
-            <img src="assets/img/aboutv2-2.svg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-5 pt-lg-0" data-aos="fade-left">
-            <h4>Hiermit teilen wir Ihnen auch noch mit, dass wir als neu gegründete Firma Ha&Fa Nord ausserdem
-              hochwertige Reinigungsdienste für Büros und Geschäftsstellen anbieten. Unser Ziel ist es, dafür zu sorgen,
-              dass Ihre
-              Arbeitsumgebung sauber und gesund bleibt. Unser Dienstleistungen:</h4>
-            <p>1. T&auml;glicher Reinigungsservice: * Staubreinigung von B&uuml;ros und
-              Arbeitsr&auml;umen * Staubsaugen von B&ouml;den und Teppichen * Oberfl&auml;chenwischen und Desinfektion *
-              M&uuml;lleimer leeren und Beutel erneut wechseln * Reinigung von K&uuml;chen und Sanit&auml;ranlagen</p>
-            <p>2. W&ouml;chentliche und monatliche Reinigungsdienste: * Glas- und Fensterreinigung * Tiefenreinigung
-              (Teppiche waschen, B&ouml;den polieren) * Reinigung der Decke und W&auml;nde * Spezialreinigung der
-              Produktionsbereiche (Besprechungsr&auml;ume, Empfang).</p>
-            <p>3. Saisonale und spezielle Reinigungsdienste: * Tiefenreinigung am Ende der Saison * Reinigung nach dem
-              Bau * Reinigung nach besonderen Anl&auml;ssen (Konferenzen, Veranstaltungen, Partys)</p>
-          </div>
-        </div>
-
-        <div id="only_de" class="row about-extra">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
-            <img src="assets/img/aboutv2-1.svg" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-right">
-            <h4>Wir arbeiten gerne mit Ihnen zusammen und sind bereit, die besten Dienstleistungen für die Reinigung
-              Ihres Arbeitsplatzes zu erbringen.</h4>
-            <p>Unsere Vorteile:<br />* Professionelles Team: Unser Reinigungsteam aus erfahrenen und zuverl&auml;ssigen
-              Mitarbeitern reinigt Ihre R&auml;umlichkeiten auf h&ouml;chstem Niveau.<br />* Hochwertige Ger&auml;te und
-              Produkte: Wir verwenden hochwertige Reinigungsprodukte und moderne Ger&auml;te, die eine effizientere und
-              effektivere Reinigung gew&auml;hrleisten.<br />* Umweltfreundlich: Wir verwenden umweltfreundliche und
-              umweltfreundliche Produkte.<br />* Individueller Ansatz: Wir entwerfen einen individuellen Reinigungsplan,
-              der die Anforderungen jedes Kunden ber&uuml;cksichtigt.</p>
-
-          </div>
-
-        </div>
-
-
-
-    </section><!-- End Services Section -->
+      </div>
+    </section><!-- End About Section -->
 
 
 
@@ -511,53 +567,44 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-6 footer-info">
-            <h3>Ha&Fa Nord</h3>
-            <p data-lang="mission_text">Unsere Mission konzentriert sich darauf, den Prozess für diejenigen zu
-              erleichtern, die sich in Deutschland niederlassen möchten, und sie mit passenden Arbeitsmöglichkeiten zu
-              verbinden. Unser erfahrenes Team bietet Beratung und Unterstützung in jedem Schritt, angefangen von der
-              Arbeitssuche bis hin zu Visa-Anträgen, Bildungsmöglichkeiten und Siedlungsphasen.</p>
-          </div>
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4 data-lang="links">Verknüpfung</h4>
-            <ul>
-              <li><a href="#" dala-lang="home">Startseite</a></li>
-              <li><a href="#" data-lang="about">Über Uns</a></li>
-              <li><a href="/impressum.html" data-lang="about">Impressum</a></li>
-              <li><a href="#" data-lang="terms">Servicebedingungen</a></li>
-              <li><a href="/policy.html" data-lang="privacy">Datenschutzrichtlinie</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4 data-lang="contact">Kontakt</h4>
-            <p>
-              Schwarzenbergstr 24c<br>
-              21073 Hamburg<br>
-              Deutschland <br>
-              <strong data-lang="phone">Tel.:</strong> +49 1577 4446745<br>
-              <strong data-lang="email">E-Mail:</strong> info@haundfa-nord.com<br>
-            </p>
-            <div class="social-links">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="https://wa.me/4915774446745" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/haundfa-nord-a3b83039a/" class="linkedin"><i
-                  class="bi bi-linkedin"></i></a>
+    <div class="footer-main">
+      <div class="container-xl">
+        <div class="row g-4 justify-content-between">
+          <div class="col-xl-auto col-md-6">
+            <div class="footer-brand">
+              <img src="assets/img/logo.png" alt="Ha&amp;Fa Nord Logo">
+              <div><strong>Ha&amp;Fa Nord</strong><small>Ihr Partner für zuverlässige Lösungen</small></div>
             </div>
+          </div>
+          <div class="col-xl-auto col-md-6">
+            <a class="footer-item" href="tel:+4915774446745"><i class="bi bi-telephone-fill"></i>
+              <span><span class="big">+49 1577 4446745</span><small>Jetzt beraten lassen.</small></span></a>
+          </div>
+          <div class="col-xl-auto col-md-6">
+            <a class="footer-item" href="mailto:info@haundfa-nord.com"><i class="bi bi-envelope-fill"></i>
+              <span>info@haundfa-nord.com</span></a>
+          </div>
+          <div class="col-xl-auto col-md-6">
+            <div class="footer-item"><i class="bi bi-geo-alt-fill"></i>
+              <span>Schwarzenbergstr. 24c<br>21073 Hamburg</span></div>
+          </div>
+          <div class="col-xl-auto col-md-12">
+            <a href="#contact" class="hf-btn hf-btn-light scrollto">Kontakt aufnehmen <i class="bi bi-arrow-right"></i></a>
           </div>
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong>Ha&Fa Nord <span id="currentYear"></span></strong>. Alle rechte vorbehalten.
-      </div>
-      <div class="credits">
-        Designed by <a href="#">Sohrab S. Ahmadpur</a>
+    <div class="container-xl">
+      <div class="footer-bottom">
+        <div>
+          <a href="/impressum.html">Impressum</a>
+          <a href="/policy.html" data-lang="privacy">Datenschutzrichtlinie</a>
+          <span>&copy; <span id="currentYear"></span> Ha&amp;Fa Nord. Alle Rechte vorbehalten.</span>
+        </div>
+        <div class="footer-social">
+          <a href="https://wa.me/4915774446745" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/in/haundfa-nord-a3b83039a/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
       </div>
     </div>
   </footer>
